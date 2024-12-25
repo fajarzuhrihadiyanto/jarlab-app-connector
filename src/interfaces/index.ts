@@ -14,7 +14,7 @@ export interface DataService<Type> {
     updateItem(filter: QueryFilterType<Type>, data: Partial<Type>, options?: UpdateOptionsType): Promise<OutputType<Type>>;
 
     // Delete data query
-    deleteItem(id: string): Promise<OutputType<Type>>;
+    deleteItem(filter: QueryFilterType<Type>): Promise<OutputType<Type>>;
 }
 
 export interface CountQuery<Type> { countItems(options?: QueryOptionsType<Type>): Promise<OutputType<number>>; }
