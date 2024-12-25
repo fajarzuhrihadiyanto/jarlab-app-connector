@@ -3,7 +3,7 @@ import { QueryOptionsType, OutputTypeList, OutputType, UpdateOptionsType, QueryF
 export interface DataService<Type> {
     // Get item query
     getItems(options?: QueryOptionsType<Type>): Promise<OutputTypeList<Type>>;
-    getItem(id: string, options?: QueryOptionsType<Type>): Promise<OutputType<Type>>;
+    getItem(options?: QueryOptionsType<Type>): Promise<OutputType<Type>>;
 
     // Add item query
     addItems(data: Array<Type>): Promise<OutputTypeList<Type>>;
