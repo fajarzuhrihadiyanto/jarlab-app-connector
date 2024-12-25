@@ -10,7 +10,7 @@ export interface DataService<Type> {
     addItem(data: Type): Promise<OutputType<Type>>;
 
     // Update data query
-    updateItem(id: string, data: Partial<Type>, options?: UpdateOptionsType): Promise<OutputType<Type>>;
+    updateItem(filter: QueryFilterType<Type>, data: Partial<Type>, options?: UpdateOptionsType): Promise<OutputType<Type>>;
 
     // Delete data query
     deleteItem(id: string): Promise<OutputType<Type>>;
