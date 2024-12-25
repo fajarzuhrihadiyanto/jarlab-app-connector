@@ -16,15 +16,15 @@ export interface DataService<Type> {
     deleteItem(id: string): Promise<OutputType<Type>>;
 }
 
-export interface CountQuery<Type> { countItems(options?: QueryFilterType<Type>): Promise<OutputType<number>>; }
+export interface CountQuery<Type> { countItems(options?: QueryOptionsType<Type>): Promise<OutputType<number>>; }
 
-export interface SumQuery<Type> { sumItems(options?: QueryFilterType<Type>): Promise<OutputType<number>>; }
+export interface SumQuery<Type> { sumItems(options?: QueryOptionsType<Type>): Promise<OutputType<number>>; }
 
-export interface AvgQuery<Type> { avgItems(options?: QueryFilterType<Type>): Promise<OutputType<number>>; }
+export interface AvgQuery<Type> { avgItems(options?: QueryOptionsType<Type>): Promise<OutputType<number>>; }
 
-export interface MaxQuery<Type> { maxItems(options?: QueryFilterType<Type>): Promise<OutputType<number>>; }
+export interface MaxQuery<Type> { maxItems(options?: QueryOptionsType<Type>): Promise<OutputType<number>>; }
 
-export interface MinQuery<Type> { minItems(options?: QueryFilterType<Type>): Promise<OutputType<number>>; }
+export interface MinQuery<Type> { minItems(options?: QueryOptionsType<Type>): Promise<OutputType<number>>; }
 
 export interface AppConnector {
     registerDataService<Type>(typeName: string, service: DataService<Type>): void;
