@@ -1,0 +1,17 @@
+{
+  "name": "@jarlab/app-connector",
+  "version": "1.0.0",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "compile:unix": "rm -rf dist/lib && tsc",
+    "compile:win": "rmdir /s /q dist\\lib && tsc"
+  },
+  "author": "Fajar Zuhri Hadiyanto",
+  "license": "ISC",
+  "description": "This package is general app connector library for personal purposes"
+}
