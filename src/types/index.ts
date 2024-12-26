@@ -15,7 +15,7 @@ export type QueryOrderType<Type> = {
 		? never                             	// You cannot order by field with type array
 		: Type[Key] extends object
 			? QueryProjectionType<Type[Key]>    // Recurse if the field is a non-array object
-			: 0 | 1;                            // Otherwise, 0 for ascending or 1 for descending for non-nested fields
+			: -1 | 1;                           // Otherwise, 1 for ascending or -1 for descending for non-nested fields
 }
 
 export type QueryOptionsType<Type> = {
