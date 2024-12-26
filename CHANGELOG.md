@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/fajarzuhrihadiyanto/jarlab-app-connector/compare/v1.1.0...v1.1.1) (2024-12-26)
+
+
+### Features
+
+* adjust order direction type from 0 1 to -1 1 ([80ba66b](https://github.com/fajarzuhrihadiyanto/jarlab-app-connector/commit/80ba66b97a3c623079bbbcc4e5ac786d19e6ab0a))
+
+
+
 # [1.1.0](https://github.com/fajarzuhrihadiyanto/jarlab-app-connector/compare/v1.0.0...v1.1.0) (2024-12-25)
 
 
