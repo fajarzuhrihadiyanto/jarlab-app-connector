@@ -38,10 +38,10 @@ export type MetadataType = {
 }
 
 export type OutputTypeList<Type> = {
-	data: Array<Type>,
+	data: Array<Partial<Type>>,
 	metadata: MetadataType
 }
 
 export type OutputType<Type> = {
-	data: Type | null
+	data: Partial<Type> | null
 }
