@@ -26,10 +26,10 @@ export type QueryOptionsType<Type> = {
 	limit?: number,
 };
 
-export type UpdateOptionsType = {
+export type UpdateOptionsType = Partial<{
 	upsert: boolean,
 	returnNew: boolean,
-}
+}>
 
 export type MetadataType = {
 	total: number,
