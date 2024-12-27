@@ -1,3 +1,13 @@
+## [1.1.3](https://github.com/fajarzuhrihadiyanto/jarlab-app-connector/compare/v1.1.2...v1.1.3) (2024-12-27)
+
+
+### Features
+
+* allow any return type to be partial ([8a2f3f4](https://github.com/fajarzuhrihadiyanto/jarlab-app-connector/commit/8a2f3f4f3014c0d1b40f4095e16ed31cecc7315c))
+* allow update option to be partial ([7e35044](https://github.com/fajarzuhrihadiyanto/jarlab-app-connector/commit/7e35044eb596b59327e0b4296ca0c9b11b8532ec))
+
+
+
 ## [1.1.2](https://github.com/fajarzuhrihadiyanto/jarlab-app-connector/compare/v1.1.1...v1.1.2) (2024-12-26)
 
 
